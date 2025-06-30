@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Usuário</title>
+    <link rel="stylesheet" href="/style.css">
+<body>
+    <h1>Cadastro de Usuário</h1>
+    <form onsubmit="enviar(event)">
+        <label>Nome:
+        <input type="text" name="nome" required />
+        </label>
+        <label>Email:
+        <input type="email" name="email" required />
+        </label>
+        <label>Senha:
+        <input type="password" name="senha" required />
+        </label>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+    <script>
+        function enviar(event) {
+        event.preventDefault();
+        alert("Cadastro realizado com sucesso!");
+        }
+    </script>
+</body>
+</html>
